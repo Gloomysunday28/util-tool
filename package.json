@@ -1,0 +1,29 @@
+{
+  "name": "@kvinc/util-tool",
+  "version": "1.0.5",
+  "description": "JavaScript gadgets to help improve productivity",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.ts --no-source-maps && parcel build src/helpers/index.ts --out-dir helpers --no-source-maps",
+    "dev": "parcel index.html --out-dir lib",
+    "release": "node build/release.js"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "helpers"
+  ],
+  "keywords": [
+    "util"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
